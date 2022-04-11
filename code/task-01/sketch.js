@@ -24,26 +24,22 @@ function draw() {
   
   fill('#E87143');
   circle(200, 200, 190);
-  arc(
-    200, 200, 
-    190, 190,
-    Math.PI / 180 * 45,
-    Math.PI / 180 * 315,
-  );
   
   fill('#FF6C57');
   circle(200, 200, 130);
   
-  line(200, 200, 400, 400);
-  line(400, 0, 200, 200);
+  stroke('#FF6C57');
+  strokeWeight(2.0);
 
-  stroke(255, 0, 0);
+  stroke(255)
+  fill('#7EACDA')
 
   arc(
-    200, 200, 
-    130, 130,
+    200, 200,
+    300, 300,
     Math.PI / 180 * 45,
     Math.PI / 180 * 315,
+    PIE
   );
 
 
