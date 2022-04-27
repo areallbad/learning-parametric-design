@@ -32,7 +32,7 @@ function draw() {
   rect(150, 125, 100, 100, 5);
   
   noFill();
-  stroke(255);
+  stroke('white');
 
   rect(225, 150, 75, 50, 5);
 
