@@ -22,7 +22,7 @@ function draw() {
 function calcWave() {
   // Increment theta (try different values for
   // 'angular velocity' here)
-  theta += 0.05;
+  theta += 0.03;
 
   // For every x value, calculate a y value with sine function
   let x = theta;
@@ -41,3 +41,11 @@ function renderWave() {
   }
 }
 
+function keyPressed() {
+  if (keyCode === 32) {
+    xspacing += 20; 
+  }
+else if (keyCode !== 32) {
+  xspacing * x
+}
+}
