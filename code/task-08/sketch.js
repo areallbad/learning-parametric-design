@@ -43,9 +43,9 @@ function renderWave() {
 
 function keyPressed() {
   if (keyCode === 32) {
-    xspacing += 20; 
+    amplitude += 10; 
   }
 else if (keyCode !== 32) {
-  xspacing * x
+  xspacing * x, height / 2 + yvalues[x], 5, 5;
 }
 }
