@@ -42,10 +42,12 @@ function renderWave() {
 }
 
 function keyPressed() {
-  if (keyCode === 32) {
+  if (keyCode === 39) {
     amplitude += 10; 
   }
-//else if (keyCode !== 32) {
- // xspacing * x, height / 2 + yvalues[x], 5, 5;
-//}
+
+  else if (keyCode === 37) {
+  amplitude -= 10;
+  }
+
 }
