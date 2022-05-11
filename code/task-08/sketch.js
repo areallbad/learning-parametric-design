@@ -45,7 +45,7 @@ function keyPressed() {
   if (keyCode === 32) {
     amplitude += 10; 
   }
-else if (keyCode !== 32) {
-  xspacing * x, height / 2 + yvalues[x], 5, 5;
-}
+//else if (keyCode !== 32) {
+ // xspacing * x, height / 2 + yvalues[x], 5, 5;
+//}
 }
