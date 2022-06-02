@@ -94,9 +94,9 @@ function draw() {
           bd = j * res + res * add / diff;
         }
         stroke(153, 120, 144)
-        strokeWeight(2)
+        strokeWeight(14)
         if(height%9 == 0){
-          strokeWeight(3)
+          strokeWeight(8)
         }
         
         
