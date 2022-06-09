@@ -1,6 +1,6 @@
 let hMap = [];
 let res = 5;
-let thresh = 3;
+let thresh = 4;
 let t = 0;
 move = true;
 
@@ -93,13 +93,14 @@ function draw() {
           let add = abs(hMap[i+1][j] - contourValue);
           bd = j * res + res * add / diff;
         }
+        
         stroke(153, 120, 144)
         strokeWeight(14)
         if(height%9 == 0){
           strokeWeight(8)
         }
         
-        
+        strokeWeight(noise(i / 5, j /10)*30);
 
         if(ab){
           if(ac){
@@ -138,3 +139,5 @@ function draw() {
     }
   }
 }//https://editor.p5js.org/rjgilmour/sketches/l3XM1tz6d
+
+//strokeCap(round)
