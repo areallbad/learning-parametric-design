@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(230);
+  background(255);
   if(move){
     for(let i = 0; i < 1 + width/res; i++){
       hMap[i] = [];
@@ -26,7 +26,7 @@ function draw() {
     t += 1;
   }
   
-  
+
   
   for(let i = 0; i < 1 + width/res; i++){
     for(let j = 0; j < 1 + height/res; j++){
@@ -94,13 +94,14 @@ function draw() {
           bd = j * res + res * add / diff;
         }
         
-        stroke(153, 120, 144)
-        strokeWeight(14)
-        if(height%9 == 0){
-          strokeWeight(8)
+        strokeCap(round)
+        stroke('#F27127')
+        strokeWeight(2)
+        if(height%12 == 0){
+          strokeWeight(5)
         }
         
-        strokeWeight(noise(i / 5, j /10)*30);
+        strokeWeight(noise(i / 9, j / 12)*30);
 
         if(ab){
           if(ac){
@@ -138,6 +139,12 @@ function draw() {
       
     }
   }
-}//https://editor.p5js.org/rjgilmour/sketches/l3XM1tz6d
+
+}
+function keyReleased() {
+  save();
+}
+
+//https://editor.p5js.org/rjgilmour/sketches/l3XM1tz6d
 
 //strokeCap(round)
