@@ -96,9 +96,9 @@ function draw() {
         
         strokeCap(round)
         stroke('#F27127')
-        strokeWeight(2)
+        strokeWeight(10)
         if(height%12 == 0){
-          strokeWeight(5)
+          strokeWeight(20)
         }
         
         strokeWeight(noise(i / 9, j / 12)*30);
