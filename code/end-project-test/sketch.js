@@ -6,6 +6,11 @@ move = true;
 
 function setup() {
   createCanvas(2000, 1000);
+  frameRate(30)
+  createLoop({
+    duration:10, 
+    gif:true
+  });
   for(let i = 0; i < 1 + width/res; i++){
     hMap[i] = [];
     for(let j = 0; j < 1 + height/res; j++){
